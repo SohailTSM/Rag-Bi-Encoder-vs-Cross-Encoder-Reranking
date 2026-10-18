@@ -1,0 +1,13 @@
+{
+ "device": "cuda",
+ "gpu": "NVIDIA GeForce RTX 5050 Laptop GPU",
+ "cpu_threads": 16,
+ "torch": "2.14.1+cu130",
+ "bi_encoder": "sentence-transformers/all-MiniLM-L6-v2",
+ "cross_encoder": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+ "llm": "qwen2.5:7b-instruct",
+ "chunks": 228,
+ "max_words": 120,
+ "top_k": 10,
+ "top_n": 3
+}

@@ -1,0 +1,3 @@
+device,corpus_chunks,cross-encoder over ALL chunks (ms),bi-encoder + FAISS over ALL chunks (ms),cross-encoder per pair (ms)
+cuda,228,247.216,3.27,1.084
+cpu,228,3312.872,9.092,14.53

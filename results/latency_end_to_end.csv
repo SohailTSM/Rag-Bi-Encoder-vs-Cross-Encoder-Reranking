@@ -1,0 +1,5 @@
+device,pipeline,retrieval_ms,llm_ms (median),end_to_end_ms,retrieval_share_%
+cuda,Pipeline 1,2.88,355.88,358.76,0.8
+cuda,Pipeline 2,17.06,355.88,372.95,4.58
+cpu,Pipeline 1,8.01,355.88,363.9,2.2
+cpu,Pipeline 2,139.92,355.88,495.8,28.22

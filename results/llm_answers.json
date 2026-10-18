@@ -1,0 +1,170 @@
+{
+ "799fe8f320d01ae2bd43c7e1e418bb3efea29abd962d7316890f3334a8d0f8a8": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The client MUST implement CSRF protection for its redirection URI. This is typically accomplished by requiring any request sent to the redirection URI endpoint to include a value that binds the request to the user-agent's authenticated state (e.g., a hash of the session cookie used to authenticate the user-agent). (Section 10.12)",
+  "latency_s": 1.1934275759995217,
+  "output_tokens": 67,
+  "prompt_tokens": 478
+ },
+ "b2e28e2ac2e93e4cb3230f810b014e9d6f8603074f9736dac5eb9a2b11d68aef": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "A website can use the state parameter, which SHOULD be used for preventing cross-site request forgery as described in Section 10.12. This parameter is an opaque value used by the client to maintain state between the request and callback. The authorization server includes this value when redirecting the user-agent back to the client. By verifying the state parameter, the client can ensure that the callback is not forged.",
+  "latency_s": 1.459389817000556,
+  "output_tokens": 84,
+  "prompt_tokens": 635
+ },
+ "48e55b19c2f332a52303133199705f21bb831ec430819868410c64d430216a18": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The provided context does not answer this question.",
+  "latency_s": 0.39901196899973,
+  "output_tokens": 10,
+  "prompt_tokens": 677
+ },
+ "9fca11bdae6838ecf0b5b6c7a4aab878ba4073587124167565b359d0a82ac67e": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "MUST NOT, as the authorization server MUST include the HTTP \"Cache-Control\" response header field with a value of \"no-store\" in any response containing tokens. (Section 5.1)",
+  "latency_s": 0.8322151089996623,
+  "output_tokens": 41,
+  "prompt_tokens": 639
+ },
+ "de0a500960483419b459b1d40305f72730854720d0c4f4fec2802df902a018bd": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The server can hand out a new refresh token when the client refreshes, and the old refresh token is typically invalidated but retained by the authorization server. This practice helps in detecting potential refresh token abuse, as described in Section 10.4.",
+  "latency_s": 0.9735601510001288,
+  "output_tokens": 51,
+  "prompt_tokens": 588
+ },
+ "7087c28f9629762ec0e50061d2b9b8ee1c74999402b075464802cd827464c960": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "Yes, the server can hand out a new refresh token when the client refreshes. In this case, the client must discard the old refresh token and replace it with the new one. The server MAY revoke the old refresh token after issuing a new one. (Section 6)",
+  "latency_s": 1.0089621249999254,
+  "output_tokens": 57,
+  "prompt_tokens": 524
+ },
+ "3153558be215e3d8da830a56a2f252318822f163d7487c5f5f74e459f46c1910": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The provided context does not answer this question.",
+  "latency_s": 0.3159355739999228,
+  "output_tokens": 10,
+  "prompt_tokens": 492
+ },
+ "46d42ca040eb0cdbbe3064463544e70f16f7382884020314ef50ab2bda2689f1": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The implicit grant type is not allowed to issue a refresh token. (Section 4.2)",
+  "latency_s": 0.5249919879997833,
+  "output_tokens": 21,
+  "prompt_tokens": 610
+ },
+ "dd8c99bcb3e4fa6a4f6cd8b30f9f132e45d314b80947ae0335c0881afcb2fff5": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The provided context does not answer this question.",
+  "latency_s": 0.3639605289999963,
+  "output_tokens": 10,
+  "prompt_tokens": 539
+ },
+ "af8c1aeb505f3376eaae8884fe2f6751064c86df19b5f0abe5de2019ee369a5e": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The provided context does not answer this question.",
+  "latency_s": 0.3187916970000515,
+  "output_tokens": 10,
+  "prompt_tokens": 524
+ },
+ "866a64b6f1e424c6a7a06cc46e3f70f75cb44657637a2419cab247e6b0fae0f9": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "Public clients are not required to authenticate at the token endpoint. The authorization server MAY establish a client authentication method with public clients but MUST NOT rely on public client authentication for the purpose of identifying the client. (Section 2.3)",
+  "latency_s": 0.8467227379996984,
+  "output_tokens": 48,
+  "prompt_tokens": 443
+ },
+ "93c8be35faa8b66f319f89263b29347763111c896e35955a455471190aacb81d": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The provided context does not answer this question.",
+  "latency_s": 0.2979306359993643,
+  "output_tokens": 10,
+  "prompt_tokens": 451
+ },
+ "966a7acc70044c95dd49554566e3253ee92b20808ffe0ed50846dc5f66771e57": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "Refresh tokens should be bound to the client they were issued to because the authorization server MUST verify the binding between the refresh token and client identity whenever the client identity can be authenticated. This ensures that only the intended client can use the refresh token, enhancing security (Section 10.4).",
+  "latency_s": 0.9610516059992733,
+  "output_tokens": 59,
+  "prompt_tokens": 592
+ },
+ "10ab432b4930cf903cdcc1de50bd0ac0d7ce2336732d021d726f415e52894e70": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "Refresh tokens should be bound to the client they were issued to because they are typically long-lasting credentials used to request additional access tokens. Binding them ensures that only the intended client can use them, enhancing security. This binding is mandatory for confidential clients or clients issued client credentials, as required by Section 6 of RFC 6749.",
+  "latency_s": 1.2557325859997945,
+  "output_tokens": 69,
+  "prompt_tokens": 659
+ },
+ "51bf4b52c6209bb26ff715530b0b1ca0b7ec512a1fbc7936e4a9890568aff2e4": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The server should not proceed with the authorization request if the redirect URI in the authorization request does not match the registered one. The authorization server MUST validate the provided redirect URI against the registered value (Section 10.6).",
+  "latency_s": 0.8674944790000154,
+  "output_tokens": 46,
+  "prompt_tokens": 519
+ },
+ "5d084e67a6f66fb6cef5b3d5f0315c7f502ea6b28fea9d4c619bfe3beb654c21": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The server should compare the received redirection URI against the registered ones (or their components) and ensure they match. If there is a mismatch, the server MUST NOT automatically redirect to the invalid URI and SHOULD inform the resource owner of the error instead. (Section 3.1.2.3)",
+  "latency_s": 1.1060906720003914,
+  "output_tokens": 61,
+  "prompt_tokens": 578
+ },
+ "5ad88905273691526074e23f2cc32d30464d25d5298b725dc3a1d8614be08f02": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The provided context does not answer this question.",
+  "latency_s": 0.26403072099947167,
+  "output_tokens": 10,
+  "prompt_tokens": 369
+ },
+ "7816dbda59ae8433abc1b72bdc17318ac14e4e8eaf27a03c3fe4a7908364b62b": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The provided context does not answer this question.",
+  "latency_s": 0.34467091799979244,
+  "output_tokens": 10,
+  "prompt_tokens": 557
+ },
+ "b398e03312e569006513e6e0186755adaf40add5869e9b1c876bccd842b42918": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The provided context does not answer this question.",
+  "latency_s": 0.3238541400005488,
+  "output_tokens": 10,
+  "prompt_tokens": 615
+ },
+ "2cc9d03a13e6ef5983597eb232ca5631975ed010c3070f2c294f455f36c0384e": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The provided context does not answer this question.",
+  "latency_s": 0.31298346999938076,
+  "output_tokens": 10,
+  "prompt_tokens": 663
+ },
+ "cc3882fe96cf718d6ecb52a905f09f857baa6b08788a7a83bd97307012744d63": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The provided context does not answer this question.",
+  "latency_s": 0.3214635599997564,
+  "output_tokens": 10,
+  "prompt_tokens": 501
+ },
+ "fba05484b243fce4caeb363b7929c84a082d4fbe358c511fb9c4ef5b6ab60994": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The provided context does not answer this question.",
+  "latency_s": 0.2884317829993961,
+  "output_tokens": 10,
+  "prompt_tokens": 442
+ },
+ "6fbfbcf5e26ac0acd9365dd93af380b0eb72fbd06857301c979a15e956fadaaf": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The provided context does not answer this question.",
+  "latency_s": 0.3478083299996797,
+  "output_tokens": 10,
+  "prompt_tokens": 538
+ },
+ "92746eee03c1ec5c144f2da05c61b08a27288189469187bbdfb09ca74d407622": {
+  "model": "qwen2.5:7b-instruct",
+  "answer": "The provided context does not answer this question.",
+  "latency_s": 0.2888425029996142,
+  "output_tokens": 10,
+  "prompt_tokens": 613
+ }
+}

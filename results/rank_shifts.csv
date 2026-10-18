@@ -1,0 +1,35 @@
+id,category,query,gold_rank_full_corpus,baseline_rank,reranked_rank,in_top3_baseline,in_top3_reranked,outcome,shift
+K1,keyword_trap,How long should a one-time login code stay valid?,2,2,1,True,True,top 3 in both,#2 -> #1
+K2,keyword_trap,How do I stop attackers from tricking users into clicking a hidden button on the approval page?,1,1,1,True,True,top 3 in both,#1 -> #1
+K3,keyword_trap,How can a website stop another site from forging the callback to its redirect page?,3,3,4,True,False,DEMOTED out of top 3,#3 -> #4
+K4,keyword_trap,What does the server send back when the user declines the permission request?,17,,,False,False,recall miss (gold not in top 10),#17 in full corpus (not in top 10)
+K5,keyword_trap,Is it safe to let a phone app keep a secret key for authenticating itself?,2,2,3,True,True,top 3 in both,#2 -> #3
+K6,keyword_trap,How should an app installed on a desktop receive the response from the login page?,1,1,2,True,True,top 3 in both,#1 -> #2
+K7,keyword_trap,Should a browser or proxy be allowed to store the token response?,6,6,1,False,True,PROMOTED into top 3,#6 -> #1
+K8,keyword_trap,What is the token's time to live field called?,1,1,2,True,True,top 3 in both,#1 -> #2
+E1,exception,What happens if an authorization code is used twice?,1,1,1,True,True,top 3 in both,#1 -> #1
+E2,exception,Does the client credentials grant give back a refresh token?,21,,,False,False,recall miss (gold not in top 10),#21 in full corpus (not in top 10)
+E3,exception,When must the authorization server not send the user back to the client after an error?,3,3,1,True,True,top 3 in both,#3 -> #1
+E4,exception,Is redirect_uri needed when exchanging the code for a token?,3,3,2,True,True,top 3 in both,#3 -> #2
+E5,exception,"Can the server hand out a new refresh token when the client refreshes, and what happens to the old one?",4,4,1,False,True,PROMOTED into top 3,#4 -> #1
+E6,exception,Can a native app installation ever be given its own client password?,3,3,1,True,True,top 3 in both,#3 -> #1
+E7,exception,When is the scope parameter required in the token response?,2,2,1,True,True,top 3 in both,#2 -> #1
+E8,exception,Which status code does the token endpoint use for invalid_client when the client used the Authorization header?,3,3,1,True,True,top 3 in both,#3 -> #1
+N1,negation,Is the implicit grant allowed to issue a refresh token?,5,5,1,False,True,PROMOTED into top 3,#5 -> #1
+N2,negation,Is it allowed to put the client secret in the request URI?,1,1,1,True,True,top 3 in both,#1 -> #1
+N3,negation,Can a refresh request ask for more scope than originally granted?,1,1,1,True,True,top 3 in both,#1 -> #1
+N4,negation,Is the client allowed to keep the user's password after getting a token with the password grant?,14,,,False,False,recall miss (gold not in top 10),#14 in full corpus (not in top 10)
+N5,negation,Can the authorization endpoint URI contain a fragment?,1,1,1,True,True,top 3 in both,#1 -> #1
+N6,negation,Can a parameter appear more than once in a request?,1,1,1,True,True,top 3 in both,#1 -> #1
+N7,negation,Which clients are not allowed to use the password grant?,6,6,1,False,True,PROMOTED into top 3,#6 -> #1
+N8,negation,Should the authorization server accept a redirect to any URI without registration?,1,1,1,True,True,top 3 in both,#1 -> #1
+N9,negation,Are public clients required to authenticate at the token endpoint?,1,1,7,True,False,DEMOTED out of top 3,#1 -> #7
+B1,buried,Does OAuth define how the resource server validates an access token?,2,2,3,True,True,top 3 in both,#2 -> #3
+B2,buried,What error code is returned when the requested scope is invalid?,2,2,1,True,True,top 3 in both,#2 -> #1
+B3,buried,What is the risk of an open redirector at the redirect endpoint?,1,1,1,True,True,top 3 in both,#1 -> #1
+B4,buried,How should the client protect itself against redirect URI manipulation with authorization codes?,1,1,1,True,True,top 3 in both,#1 -> #1
+B5,buried,Why should refresh tokens be bound to the client they were issued to?,2,2,1,True,True,top 3 in both,#2 -> #1
+B6,buried,How can an attacker guess tokens and what entropy is needed?,1,1,1,True,True,top 3 in both,#1 -> #1
+B7,buried,What should the server do if the redirect URI in the authorization request doesn't match the registered one?,7,7,3,False,True,PROMOTED into top 3,#7 -> #3
+B8,buried,What should be done when TLS isn't available for the redirect endpoint?,1,1,1,True,True,top 3 in both,#1 -> #1
+B9,buried,Can the authorization server issue a refresh token in the authorization code flow?,17,,,False,False,recall miss (gold not in top 10),#17 in full corpus (not in top 10)

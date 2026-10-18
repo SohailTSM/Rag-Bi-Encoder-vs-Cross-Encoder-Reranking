@@ -1,0 +1,1454 @@
+{
+ "K3": {
+  "question": "How can a website stop another site from forging the callback to its redirect page?",
+  "answer1": "The client MUST implement CSRF protection for its redirection URI. This is typically accomplished by requiring any request sent to the redirection URI endpoint to include a value that binds the request to the user-agent's authenticated state (e.g., a hash of the session cookie used to authenticate the user-agent). (Section 10.12)",
+  "answer2": "A website can use the state parameter, which SHOULD be used for preventing cross-site request forgery as described in Section 10.12. This parameter is an opaque value used by the client to maintain state between the request and callback. The authorization server includes this value when redirecting the user-agent back to the client. By verifying the state parameter, the client can ensure that the callback is not forged.",
+  "sections1": [
+   "1.7",
+   "10.13",
+   "10.12"
+  ],
+  "sections2": [
+   "4.2.1",
+   "4.1.1",
+   "10.15"
+  ],
+  "llm_latency_1": 1.1934275759995217,
+  "llm_latency_2": 1.459389817000556,
+  "category": "keyword_trap",
+  "shift": "#3 -> #4",
+  "outcome": "DEMOTED out of top 3",
+  "top10": [
+   {
+    "bi_rank": 1,
+    "ce_rank": 5,
+    "move": "#1 -> #5",
+    "gold": "",
+    "chunk_id": 30,
+    "section": "1.7",
+    "title": "HTTP Redirections",
+    "bi_score": 0.423,
+    "ce_score": -3.47
+   },
+   {
+    "bi_rank": 2,
+    "ce_rank": 10,
+    "move": "#2 -> #10",
+    "gold": "",
+    "chunk_id": 180,
+    "section": "10.13",
+    "title": "Clickjacking",
+    "bi_score": 0.393,
+    "ce_score": -8.51
+   },
+   {
+    "bi_rank": 3,
+    "ce_rank": 4,
+    "move": "#3 -> #4",
+    "gold": "GOLD",
+    "chunk_id": 176,
+    "section": "10.12",
+    "title": "Cross-Site Request Forgery",
+    "bi_score": 0.392,
+    "ce_score": -3.25
+   },
+   {
+    "bi_rank": 4,
+    "ce_rank": 9,
+    "move": "#4 -> #9",
+    "gold": "",
+    "chunk_id": 165,
+    "section": "10.6",
+    "title": "Authorization Code Redirection URI Manipulation",
+    "bi_score": 0.386,
+    "ce_score": -7.53
+   },
+   {
+    "bi_rank": 5,
+    "ce_rank": 2,
+    "move": "#5 -> #2",
+    "gold": "",
+    "chunk_id": 74,
+    "section": "4.1.1",
+    "title": "Authorization Request",
+    "bi_score": 0.371,
+    "ce_score": -0.99
+   },
+   {
+    "bi_rank": 6,
+    "ce_rank": 8,
+    "move": "#6 -> #8",
+    "gold": "",
+    "chunk_id": 175,
+    "section": "10.12",
+    "title": "Cross-Site Request Forgery",
+    "bi_score": 0.371,
+    "ce_score": -5.64
+   },
+   {
+    "bi_rank": 7,
+    "ce_rank": 6,
+    "move": "#7 -> #6",
+    "gold": "",
+    "chunk_id": 164,
+    "section": "10.6",
+    "title": "Authorization Code Redirection URI Manipulation",
+    "bi_score": 0.371,
+    "ce_score": -4.31
+   },
+   {
+    "bi_rank": 8,
+    "ce_rank": 7,
+    "move": "#8 -> #7",
+    "gold": "",
+    "chunk_id": 60,
+    "section": "3.1.2.5",
+    "title": "Endpoint Content",
+    "bi_score": 0.37,
+    "ce_score": -5.39
+   },
+   {
+    "bi_rank": 9,
+    "ce_rank": 3,
+    "move": "#9 -> #3",
+    "gold": "",
+    "chunk_id": 183,
+    "section": "10.15",
+    "title": "Open Redirectors",
+    "bi_score": 0.363,
+    "ce_score": -2.67
+   },
+   {
+    "bi_rank": 10,
+    "ce_rank": 1,
+    "move": "#10 -> #1",
+    "gold": "",
+    "chunk_id": 95,
+    "section": "4.2.1",
+    "title": "Authorization Request",
+    "bi_score": 0.361,
+    "ce_score": -0.9
+   }
+  ]
+ },
+ "K7": {
+  "question": "Should a browser or proxy be allowed to store the token response?",
+  "answer1": "The provided context does not answer this question.",
+  "answer2": "MUST NOT, as the authorization server MUST include the HTTP \"Cache-Control\" response header field with a value of \"no-store\" in any response containing tokens. (Section 5.1)",
+  "sections1": [
+   "4.2.2",
+   "4.2.2",
+   "5.1"
+  ],
+  "sections2": [
+   "5.1",
+   "3.2",
+   "4.3.3"
+  ],
+  "llm_latency_1": 0.39901196899973,
+  "llm_latency_2": 0.8322151089996623,
+  "category": "keyword_trap",
+  "shift": "#6 -> #1",
+  "outcome": "PROMOTED into top 3",
+  "top10": [
+   {
+    "bi_rank": 1,
+    "ce_rank": 6,
+    "move": "#1 -> #6",
+    "gold": "",
+    "chunk_id": 99,
+    "section": "4.2.2",
+    "title": "Access Token Response",
+    "bi_score": 0.502,
+    "ce_score": -1.99
+   },
+   {
+    "bi_rank": 2,
+    "ce_rank": 5,
+    "move": "#2 -> #5",
+    "gold": "",
+    "chunk_id": 100,
+    "section": "4.2.2",
+    "title": "Access Token Response",
+    "bi_score": 0.487,
+    "ce_score": -1.1
+   },
+   {
+    "bi_rank": 3,
+    "ce_rank": 7,
+    "move": "#3 -> #7",
+    "gold": "",
+    "chunk_id": 121,
+    "section": "5.1",
+    "title": "Successful Response",
+    "bi_score": 0.486,
+    "ce_score": -4.6
+   },
+   {
+    "bi_rank": 4,
+    "ce_rank": 10,
+    "move": "#4 -> #10",
+    "gold": "",
+    "chunk_id": 129,
+    "section": "6",
+    "title": "Refreshing an Access Token",
+    "bi_score": 0.464,
+    "ce_score": -8.26
+   },
+   {
+    "bi_rank": 5,
+    "ce_rank": 2,
+    "move": "#5 -> #2",
+    "gold": "",
+    "chunk_id": 64,
+    "section": "3.2",
+    "title": "Token Endpoint",
+    "bi_score": 0.451,
+    "ce_score": -0.53
+   },
+   {
+    "bi_rank": 6,
+    "ce_rank": 1,
+    "move": "#6 -> #1",
+    "gold": "GOLD",
+    "chunk_id": 122,
+    "section": "5.1",
+    "title": "Successful Response",
+    "bi_score": 0.447,
+    "ce_score": 0.52
+   },
+   {
+    "bi_rank": 7,
+    "ce_rank": 3,
+    "move": "#7 -> #3",
+    "gold": "GOLD",
+    "chunk_id": 111,
+    "section": "4.3.3",
+    "title": "Access Token Response",
+    "bi_score": 0.442,
+    "ce_score": -0.64
+   },
+   {
+    "bi_rank": 8,
+    "ce_rank": 4,
+    "move": "#8 -> #4",
+    "gold": "GOLD",
+    "chunk_id": 88,
+    "section": "4.1.4",
+    "title": "Access Token Response",
+    "bi_score": 0.442,
+    "ce_score": -0.73
+   },
+   {
+    "bi_rank": 9,
+    "ce_rank": 8,
+    "move": "#9 -> #8",
+    "gold": "",
+    "chunk_id": 159,
+    "section": "10.4",
+    "title": "Refresh Tokens",
+    "bi_score": 0.438,
+    "ce_score": -4.88
+   },
+   {
+    "bi_rank": 10,
+    "ce_rank": 9,
+    "move": "#10 -> #9",
+    "gold": "",
+    "chunk_id": 78,
+    "section": "4.1.2",
+    "title": "Authorization Response",
+    "bi_score": 0.436,
+    "ce_score": -5.61
+   }
+  ]
+ },
+ "E5": {
+  "question": "Can the server hand out a new refresh token when the client refreshes, and what happens to the old one?",
+  "answer1": "The server can hand out a new refresh token when the client refreshes, and the old refresh token is typically invalidated but retained by the authorization server. This practice helps in detecting potential refresh token abuse, as described in Section 10.4.",
+  "answer2": "Yes, the server can hand out a new refresh token when the client refreshes. In this case, the client must discard the old refresh token and replace it with the new one. The server MAY revoke the old refresh token after issuing a new one. (Section 6)",
+  "sections1": [
+   "1.5",
+   "10.4",
+   "10.4"
+  ],
+  "sections2": [
+   "6",
+   "10.4",
+   "1.5"
+  ],
+  "llm_latency_1": 0.9735601510001288,
+  "llm_latency_2": 1.0089621249999254,
+  "category": "exception",
+  "shift": "#4 -> #1",
+  "outcome": "PROMOTED into top 3",
+  "top10": [
+   {
+    "bi_rank": 1,
+    "ce_rank": 4,
+    "move": "#1 -> #4",
+    "gold": "",
+    "chunk_id": 24,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.701,
+    "ce_score": 5.11
+   },
+   {
+    "bi_rank": 2,
+    "ce_rank": 2,
+    "move": "#2 -> #2",
+    "gold": "",
+    "chunk_id": 160,
+    "section": "10.4",
+    "title": "Refresh Tokens",
+    "bi_score": 0.695,
+    "ce_score": 5.83
+   },
+   {
+    "bi_rank": 3,
+    "ce_rank": 6,
+    "move": "#3 -> #6",
+    "gold": "",
+    "chunk_id": 159,
+    "section": "10.4",
+    "title": "Refresh Tokens",
+    "bi_score": 0.684,
+    "ce_score": 3.71
+   },
+   {
+    "bi_rank": 4,
+    "ce_rank": 1,
+    "move": "#4 -> #1",
+    "gold": "GOLD",
+    "chunk_id": 131,
+    "section": "6",
+    "title": "Refreshing an Access Token",
+    "bi_score": 0.683,
+    "ce_score": 6.35
+   },
+   {
+    "bi_rank": 5,
+    "ce_rank": 8,
+    "move": "#5 -> #8",
+    "gold": "",
+    "chunk_id": 25,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.673,
+    "ce_score": 2.96
+   },
+   {
+    "bi_rank": 6,
+    "ce_rank": 3,
+    "move": "#6 -> #3",
+    "gold": "",
+    "chunk_id": 28,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.671,
+    "ce_score": 5.28
+   },
+   {
+    "bi_rank": 7,
+    "ce_rank": 7,
+    "move": "#7 -> #7",
+    "gold": "",
+    "chunk_id": 26,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.664,
+    "ce_score": 2.97
+   },
+   {
+    "bi_rank": 8,
+    "ce_rank": 5,
+    "move": "#8 -> #5",
+    "gold": "",
+    "chunk_id": 27,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.65,
+    "ce_score": 5.04
+   },
+   {
+    "bi_rank": 9,
+    "ce_rank": 10,
+    "move": "#9 -> #10",
+    "gold": "",
+    "chunk_id": 161,
+    "section": "10.4",
+    "title": "Refresh Tokens",
+    "bi_score": 0.638,
+    "ce_score": 1.95
+   },
+   {
+    "bi_rank": 10,
+    "ce_rank": 9,
+    "move": "#10 -> #9",
+    "gold": "",
+    "chunk_id": 129,
+    "section": "6",
+    "title": "Refreshing an Access Token",
+    "bi_score": 0.636,
+    "ce_score": 2.5
+   }
+  ]
+ },
+ "N1": {
+  "question": "Is the implicit grant allowed to issue a refresh token?",
+  "answer1": "The provided context does not answer this question.",
+  "answer2": "The implicit grant type is not allowed to issue a refresh token. (Section 4.2)",
+  "sections1": [
+   "1.5",
+   "10.4",
+   "1.5"
+  ],
+  "sections2": [
+   "4.2",
+   "6",
+   "1.5"
+  ],
+  "llm_latency_1": 0.3159355739999228,
+  "llm_latency_2": 0.5249919879997833,
+  "category": "negation",
+  "shift": "#5 -> #1",
+  "outcome": "PROMOTED into top 3",
+  "top10": [
+   {
+    "bi_rank": 1,
+    "ce_rank": 4,
+    "move": "#1 -> #4",
+    "gold": "",
+    "chunk_id": 25,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.698,
+    "ce_score": 2.07
+   },
+   {
+    "bi_rank": 2,
+    "ce_rank": 10,
+    "move": "#2 -> #10",
+    "gold": "",
+    "chunk_id": 161,
+    "section": "10.4",
+    "title": "Refresh Tokens",
+    "bi_score": 0.693,
+    "ce_score": -1.21
+   },
+   {
+    "bi_rank": 3,
+    "ce_rank": 5,
+    "move": "#3 -> #5",
+    "gold": "",
+    "chunk_id": 24,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.684,
+    "ce_score": 1.67
+   },
+   {
+    "bi_rank": 4,
+    "ce_rank": 3,
+    "move": "#4 -> #3",
+    "gold": "",
+    "chunk_id": 26,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.672,
+    "ce_score": 2.58
+   },
+   {
+    "bi_rank": 5,
+    "ce_rank": 1,
+    "move": "#5 -> #1",
+    "gold": "GOLD",
+    "chunk_id": 89,
+    "section": "4.2",
+    "title": "Implicit Grant",
+    "bi_score": 0.671,
+    "ce_score": 7.04
+   },
+   {
+    "bi_rank": 6,
+    "ce_rank": 6,
+    "move": "#6 -> #6",
+    "gold": "",
+    "chunk_id": 129,
+    "section": "6",
+    "title": "Refreshing an Access Token",
+    "bi_score": 0.669,
+    "ce_score": 1.63
+   },
+   {
+    "bi_rank": 7,
+    "ce_rank": 9,
+    "move": "#7 -> #9",
+    "gold": "",
+    "chunk_id": 28,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.657,
+    "ce_score": -0.81
+   },
+   {
+    "bi_rank": 8,
+    "ce_rank": 2,
+    "move": "#8 -> #2",
+    "gold": "",
+    "chunk_id": 128,
+    "section": "6",
+    "title": "Refreshing an Access Token",
+    "bi_score": 0.656,
+    "ce_score": 3.43
+   },
+   {
+    "bi_rank": 9,
+    "ce_rank": 8,
+    "move": "#9 -> #8",
+    "gold": "GOLD",
+    "chunk_id": 99,
+    "section": "4.2.2",
+    "title": "Access Token Response",
+    "bi_score": 0.654,
+    "ce_score": 0.3
+   },
+   {
+    "bi_rank": 10,
+    "ce_rank": 7,
+    "move": "#10 -> #7",
+    "gold": "",
+    "chunk_id": 131,
+    "section": "6",
+    "title": "Refreshing an Access Token",
+    "bi_score": 0.649,
+    "ce_score": 1.04
+   }
+  ]
+ },
+ "N7": {
+  "question": "Which clients are not allowed to use the password grant?",
+  "answer1": "The provided context does not answer this question.",
+  "answer2": "The provided context does not answer this question.",
+  "sections1": [
+   "1",
+   "1.3.4",
+   "10.7"
+  ],
+  "sections2": [
+   "1.3.3",
+   "4.3",
+   "10.7"
+  ],
+  "llm_latency_1": 0.3639605289999963,
+  "llm_latency_2": 0.3187916970000515,
+  "category": "negation",
+  "shift": "#6 -> #1",
+  "outcome": "PROMOTED into top 3",
+  "top10": [
+   {
+    "bi_rank": 1,
+    "ce_rank": 10,
+    "move": "#1 -> #10",
+    "gold": "",
+    "chunk_id": 1,
+    "section": "1",
+    "title": "Introduction",
+    "bi_score": 0.611,
+    "ce_score": -3.12
+   },
+   {
+    "bi_rank": 2,
+    "ce_rank": 7,
+    "move": "#2 -> #7",
+    "gold": "",
+    "chunk_id": 21,
+    "section": "1.3.4",
+    "title": "Client Credentials",
+    "bi_score": 0.606,
+    "ce_score": 0.75
+   },
+   {
+    "bi_rank": 3,
+    "ce_rank": 3,
+    "move": "#3 -> #3",
+    "gold": "",
+    "chunk_id": 168,
+    "section": "10.7",
+    "title": "Resource Owner Password Credentials",
+    "bi_score": 0.602,
+    "ce_score": 3.72
+   },
+   {
+    "bi_rank": 4,
+    "ce_rank": 4,
+    "move": "#4 -> #4",
+    "gold": "",
+    "chunk_id": 169,
+    "section": "10.7",
+    "title": "Resource Owner Password Credentials",
+    "bi_score": 0.553,
+    "ce_score": 3.5
+   },
+   {
+    "bi_rank": 5,
+    "ce_rank": 8,
+    "move": "#5 -> #8",
+    "gold": "",
+    "chunk_id": 113,
+    "section": "4.4",
+    "title": "Client Credentials Grant",
+    "bi_score": 0.55,
+    "ce_score": -0.54
+   },
+   {
+    "bi_rank": 6,
+    "ce_rank": 2,
+    "move": "#6 -> #2",
+    "gold": "GOLD",
+    "chunk_id": 106,
+    "section": "4.3",
+    "title": "Resource Owner Password Credentials Grant",
+    "bi_score": 0.549,
+    "ce_score": 4.0
+   },
+   {
+    "bi_rank": 7,
+    "ce_rank": 5,
+    "move": "#7 -> #5",
+    "gold": "",
+    "chunk_id": 20,
+    "section": "1.3.3",
+    "title": "Resource Owner Password Credentials",
+    "bi_score": 0.542,
+    "ce_score": 3.02
+   },
+   {
+    "bi_rank": 8,
+    "ce_rank": 1,
+    "move": "#8 -> #1",
+    "gold": "GOLD",
+    "chunk_id": 19,
+    "section": "1.3.3",
+    "title": "Resource Owner Password Credentials",
+    "bi_score": 0.54,
+    "ce_score": 4.29
+   },
+   {
+    "bi_rank": 9,
+    "ce_rank": 6,
+    "move": "#9 -> #6",
+    "gold": "",
+    "chunk_id": 112,
+    "section": "4.4",
+    "title": "Client Credentials Grant",
+    "bi_score": 0.54,
+    "ce_score": 1.96
+   },
+   {
+    "bi_rank": 10,
+    "ce_rank": 9,
+    "move": "#10 -> #9",
+    "gold": "",
+    "chunk_id": 153,
+    "section": "10.1",
+    "title": "Client Authentication",
+    "bi_score": 0.515,
+    "ce_score": -1.25
+   }
+  ]
+ },
+ "N9": {
+  "question": "Are public clients required to authenticate at the token endpoint?",
+  "answer1": "Public clients are not required to authenticate at the token endpoint. The authorization server MAY establish a client authentication method with public clients but MUST NOT rely on public client authentication for the purpose of identifying the client. (Section 2.3)",
+  "answer2": "The provided context does not answer this question.",
+  "sections1": [
+   "2.3",
+   "4.4",
+   "10.9"
+  ],
+  "sections2": [
+   "4.4",
+   "10.9",
+   "4.4"
+  ],
+  "llm_latency_1": 0.8467227379996984,
+  "llm_latency_2": 0.2979306359993643,
+  "category": "negation",
+  "shift": "#1 -> #7",
+  "outcome": "DEMOTED out of top 3",
+  "top10": [
+   {
+    "bi_rank": 1,
+    "ce_rank": 7,
+    "move": "#1 -> #7",
+    "gold": "GOLD",
+    "chunk_id": 41,
+    "section": "2.3",
+    "title": "Client Authentication",
+    "bi_score": 0.593,
+    "ce_score": 0.29
+   },
+   {
+    "bi_rank": 2,
+    "ce_rank": 1,
+    "move": "#2 -> #1",
+    "gold": "",
+    "chunk_id": 113,
+    "section": "4.4",
+    "title": "Client Credentials Grant",
+    "bi_score": 0.578,
+    "ce_score": 5.66
+   },
+   {
+    "bi_rank": 3,
+    "ce_rank": 2,
+    "move": "#3 -> #2",
+    "gold": "",
+    "chunk_id": 171,
+    "section": "10.9",
+    "title": "Ensuring Endpoint Authenticity",
+    "bi_score": 0.571,
+    "ce_score": 5.64
+   },
+   {
+    "bi_rank": 4,
+    "ce_rank": 8,
+    "move": "#4 -> #8",
+    "gold": "",
+    "chunk_id": 154,
+    "section": "10.1",
+    "title": "Client Authentication",
+    "bi_score": 0.558,
+    "ce_score": 0.01
+   },
+   {
+    "bi_rank": 5,
+    "ce_rank": 6,
+    "move": "#5 -> #6",
+    "gold": "",
+    "chunk_id": 17,
+    "section": "1.3.2",
+    "title": "Implicit",
+    "bi_score": 0.551,
+    "ce_score": 2.33
+   },
+   {
+    "bi_rank": 6,
+    "ce_rank": 4,
+    "move": "#6 -> #4",
+    "gold": "",
+    "chunk_id": 86,
+    "section": "4.1.3",
+    "title": "Access Token Request",
+    "bi_score": 0.541,
+    "ce_score": 3.3
+   },
+   {
+    "bi_rank": 7,
+    "ce_rank": 3,
+    "move": "#7 -> #3",
+    "gold": "",
+    "chunk_id": 112,
+    "section": "4.4",
+    "title": "Client Credentials Grant",
+    "bi_score": 0.535,
+    "ce_score": 4.88
+   },
+   {
+    "bi_rank": 8,
+    "ce_rank": 5,
+    "move": "#8 -> #5",
+    "gold": "",
+    "chunk_id": 110,
+    "section": "4.3.2",
+    "title": "Access Token Request",
+    "bi_score": 0.534,
+    "ce_score": 3.08
+   },
+   {
+    "bi_rank": 9,
+    "ce_rank": 10,
+    "move": "#9 -> #10",
+    "gold": "",
+    "chunk_id": 157,
+    "section": "10.3",
+    "title": "Access Tokens",
+    "bi_score": 0.533,
+    "ce_score": -2.49
+   },
+   {
+    "bi_rank": 10,
+    "ce_rank": 9,
+    "move": "#10 -> #9",
+    "gold": "",
+    "chunk_id": 55,
+    "section": "3.1.2.1",
+    "title": "Endpoint Request Confidentiality",
+    "bi_score": 0.531,
+    "ce_score": -0.74
+   }
+  ]
+ },
+ "B7": {
+  "question": "What should the server do if the redirect URI in the authorization request doesn't match the registered one?",
+  "answer1": "The server should not proceed with the authorization request if the redirect URI in the authorization request does not match the registered one. The authorization server MUST validate the provided redirect URI against the registered value (Section 10.6).",
+  "answer2": "The server should compare the received redirection URI against the registered ones (or their components) and ensure they match. If there is a mismatch, the server MUST NOT automatically redirect to the invalid URI and SHOULD inform the resource owner of the error instead. (Section 3.1.2.3)",
+  "sections1": [
+   "10.6",
+   "3.1.2.3",
+   "4.2.1"
+  ],
+  "sections2": [
+   "3.1.2.3",
+   "10.6",
+   "4.1.2.1"
+  ],
+  "llm_latency_1": 0.8674944790000154,
+  "llm_latency_2": 1.1060906720003914,
+  "category": "buried",
+  "shift": "#7 -> #3",
+  "outcome": "PROMOTED into top 3",
+  "top10": [
+   {
+    "bi_rank": 1,
+    "ce_rank": 2,
+    "move": "#1 -> #2",
+    "gold": "",
+    "chunk_id": 167,
+    "section": "10.6",
+    "title": "Authorization Code Redirection URI Manipulation",
+    "bi_score": 0.726,
+    "ce_score": 6.93
+   },
+   {
+    "bi_rank": 2,
+    "ce_rank": 1,
+    "move": "#2 -> #1",
+    "gold": "",
+    "chunk_id": 58,
+    "section": "3.1.2.3",
+    "title": "Dynamic Configuration",
+    "bi_score": 0.723,
+    "ce_score": 7.79
+   },
+   {
+    "bi_rank": 3,
+    "ce_rank": 8,
+    "move": "#3 -> #8",
+    "gold": "",
+    "chunk_id": 97,
+    "section": "4.2.1",
+    "title": "Authorization Request",
+    "bi_score": 0.696,
+    "ce_score": 4.13
+   },
+   {
+    "bi_rank": 4,
+    "ce_rank": 5,
+    "move": "#4 -> #5",
+    "gold": "",
+    "chunk_id": 56,
+    "section": "3.1.2.2",
+    "title": "Registration Requirements",
+    "bi_score": 0.694,
+    "ce_score": 6.17
+   },
+   {
+    "bi_rank": 5,
+    "ce_rank": 9,
+    "move": "#5 -> #9",
+    "gold": "",
+    "chunk_id": 77,
+    "section": "4.1.2",
+    "title": "Authorization Response",
+    "bi_score": 0.683,
+    "ce_score": 3.08
+   },
+   {
+    "bi_rank": 6,
+    "ce_rank": 10,
+    "move": "#6 -> #10",
+    "gold": "",
+    "chunk_id": 87,
+    "section": "4.1.3",
+    "title": "Access Token Request",
+    "bi_score": 0.678,
+    "ce_score": 2.02
+   },
+   {
+    "bi_rank": 7,
+    "ce_rank": 4,
+    "move": "#7 -> #4",
+    "gold": "GOLD",
+    "chunk_id": 59,
+    "section": "3.1.2.4",
+    "title": "Invalid Endpoint",
+    "bi_score": 0.677,
+    "ce_score": 6.44
+   },
+   {
+    "bi_rank": 8,
+    "ce_rank": 6,
+    "move": "#8 -> #6",
+    "gold": "",
+    "chunk_id": 57,
+    "section": "3.1.2.2",
+    "title": "Registration Requirements",
+    "bi_score": 0.675,
+    "ce_score": 5.01
+   },
+   {
+    "bi_rank": 9,
+    "ce_rank": 7,
+    "move": "#9 -> #7",
+    "gold": "",
+    "chunk_id": 164,
+    "section": "10.6",
+    "title": "Authorization Code Redirection URI Manipulation",
+    "bi_score": 0.672,
+    "ce_score": 4.43
+   },
+   {
+    "bi_rank": 10,
+    "ce_rank": 3,
+    "move": "#10 -> #3",
+    "gold": "GOLD",
+    "chunk_id": 80,
+    "section": "4.1.2.1",
+    "title": "Error Response",
+    "bi_score": 0.659,
+    "ce_score": 6.66
+   }
+  ]
+ },
+ "K4": {
+  "question": "What does the server send back when the user declines the permission request?",
+  "answer1": "The provided context does not answer this question.",
+  "answer2": "The provided context does not answer this question.",
+  "sections1": [
+   "4.2.1",
+   "4.1.1",
+   "4.1"
+  ],
+  "sections2": [
+   "4.1",
+   "4.2.1",
+   "4.1"
+  ],
+  "llm_latency_1": 0.26403072099947167,
+  "llm_latency_2": 0.34467091799979244,
+  "category": "keyword_trap",
+  "shift": "#17 in full corpus (not in top 10)",
+  "outcome": "recall miss (gold not in top 10)",
+  "top10": [
+   {
+    "bi_rank": 1,
+    "ce_rank": 2,
+    "move": "#1 -> #2",
+    "gold": "",
+    "chunk_id": 97,
+    "section": "4.2.1",
+    "title": "Authorization Request",
+    "bi_score": 0.541,
+    "ce_score": 1.23
+   },
+   {
+    "bi_rank": 2,
+    "ce_rank": 4,
+    "move": "#2 -> #4",
+    "gold": "",
+    "chunk_id": 76,
+    "section": "4.1.1",
+    "title": "Authorization Request",
+    "bi_score": 0.507,
+    "ce_score": 1.02
+   },
+   {
+    "bi_rank": 3,
+    "ce_rank": 5,
+    "move": "#3 -> #5",
+    "gold": "",
+    "chunk_id": 73,
+    "section": "4.1",
+    "title": "Authorization Code Grant",
+    "bi_score": 0.497,
+    "ce_score": 0.19
+   },
+   {
+    "bi_rank": 4,
+    "ce_rank": 1,
+    "move": "#4 -> #1",
+    "gold": "",
+    "chunk_id": 71,
+    "section": "4.1",
+    "title": "Authorization Code Grant",
+    "bi_score": 0.487,
+    "ce_score": 1.31
+   },
+   {
+    "bi_rank": 5,
+    "ce_rank": 3,
+    "move": "#5 -> #3",
+    "gold": "",
+    "chunk_id": 72,
+    "section": "4.1",
+    "title": "Authorization Code Grant",
+    "bi_score": 0.483,
+    "ce_score": 1.07
+   },
+   {
+    "bi_rank": 6,
+    "ce_rank": 8,
+    "move": "#6 -> #8",
+    "gold": "",
+    "chunk_id": 14,
+    "section": "1.3.1",
+    "title": "Authorization Code",
+    "bi_score": 0.458,
+    "ce_score": -1.88
+   },
+   {
+    "bi_rank": 7,
+    "ce_rank": 9,
+    "move": "#7 -> #9",
+    "gold": "",
+    "chunk_id": 11,
+    "section": "1.2",
+    "title": "Protocol Flow",
+    "bi_score": 0.458,
+    "ce_score": -3.31
+   },
+   {
+    "bi_rank": 8,
+    "ce_rank": 10,
+    "move": "#8 -> #10",
+    "gold": "",
+    "chunk_id": 108,
+    "section": "4.3.1",
+    "title": "Authorization Request and Response",
+    "bi_score": 0.457,
+    "ce_score": -5.37
+   },
+   {
+    "bi_rank": 9,
+    "ce_rank": 6,
+    "move": "#9 -> #6",
+    "gold": "",
+    "chunk_id": 77,
+    "section": "4.1.2",
+    "title": "Authorization Response",
+    "bi_score": 0.456,
+    "ce_score": 0.1
+   },
+   {
+    "bi_rank": 10,
+    "ce_rank": 7,
+    "move": "#10 -> #7",
+    "gold": "",
+    "chunk_id": 75,
+    "section": "4.1.1",
+    "title": "Authorization Request",
+    "bi_score": 0.441,
+    "ce_score": -0.96
+   }
+  ]
+ },
+ "E2": {
+  "question": "Does the client credentials grant give back a refresh token?",
+  "answer1": "The provided context does not answer this question.",
+  "answer2": "The provided context does not answer this question.",
+  "sections1": [
+   "1.5",
+   "6",
+   "6"
+  ],
+  "sections2": [
+   "6",
+   "1.5",
+   "1.5"
+  ],
+  "llm_latency_1": 0.3238541400005488,
+  "llm_latency_2": 0.31298346999938076,
+  "category": "exception",
+  "shift": "#21 in full corpus (not in top 10)",
+  "outcome": "recall miss (gold not in top 10)",
+  "top10": [
+   {
+    "bi_rank": 1,
+    "ce_rank": 3,
+    "move": "#1 -> #3",
+    "gold": "",
+    "chunk_id": 24,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.764,
+    "ce_score": 5.34
+   },
+   {
+    "bi_rank": 2,
+    "ce_rank": 1,
+    "move": "#2 -> #1",
+    "gold": "",
+    "chunk_id": 129,
+    "section": "6",
+    "title": "Refreshing an Access Token",
+    "bi_score": 0.754,
+    "ce_score": 5.76
+   },
+   {
+    "bi_rank": 3,
+    "ce_rank": 5,
+    "move": "#3 -> #5",
+    "gold": "",
+    "chunk_id": 130,
+    "section": "6",
+    "title": "Refreshing an Access Token",
+    "bi_score": 0.733,
+    "ce_score": 4.7
+   },
+   {
+    "bi_rank": 4,
+    "ce_rank": 4,
+    "move": "#4 -> #4",
+    "gold": "",
+    "chunk_id": 26,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.723,
+    "ce_score": 5.07
+   },
+   {
+    "bi_rank": 5,
+    "ce_rank": 2,
+    "move": "#5 -> #2",
+    "gold": "",
+    "chunk_id": 25,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.721,
+    "ce_score": 5.51
+   },
+   {
+    "bi_rank": 6,
+    "ce_rank": 10,
+    "move": "#6 -> #10",
+    "gold": "",
+    "chunk_id": 131,
+    "section": "6",
+    "title": "Refreshing an Access Token",
+    "bi_score": 0.718,
+    "ce_score": 2.84
+   },
+   {
+    "bi_rank": 7,
+    "ce_rank": 7,
+    "move": "#7 -> #7",
+    "gold": "",
+    "chunk_id": 160,
+    "section": "10.4",
+    "title": "Refresh Tokens",
+    "bi_score": 0.717,
+    "ce_score": 3.84
+   },
+   {
+    "bi_rank": 8,
+    "ce_rank": 8,
+    "move": "#8 -> #8",
+    "gold": "",
+    "chunk_id": 159,
+    "section": "10.4",
+    "title": "Refresh Tokens",
+    "bi_score": 0.71,
+    "ce_score": 3.62
+   },
+   {
+    "bi_rank": 9,
+    "ce_rank": 6,
+    "move": "#9 -> #6",
+    "gold": "",
+    "chunk_id": 65,
+    "section": "3.2.1",
+    "title": "Client Authentication",
+    "bi_score": 0.706,
+    "ce_score": 3.91
+   },
+   {
+    "bi_rank": 10,
+    "ce_rank": 9,
+    "move": "#10 -> #9",
+    "gold": "",
+    "chunk_id": 28,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.705,
+    "ce_score": 2.84
+   }
+  ]
+ },
+ "N4": {
+  "question": "Is the client allowed to keep the user's password after getting a token with the password grant?",
+  "answer1": "The provided context does not answer this question.",
+  "answer2": "The provided context does not answer this question.",
+  "sections1": [
+   "10.7",
+   "4.3",
+   "1.3.3"
+  ],
+  "sections2": [
+   "1.3.3",
+   "10.7",
+   "9"
+  ],
+  "llm_latency_1": 0.3214635599997564,
+  "llm_latency_2": 0.2884317829993961,
+  "category": "negation",
+  "shift": "#14 in full corpus (not in top 10)",
+  "outcome": "recall miss (gold not in top 10)",
+  "top10": [
+   {
+    "bi_rank": 1,
+    "ce_rank": 2,
+    "move": "#1 -> #2",
+    "gold": "",
+    "chunk_id": 169,
+    "section": "10.7",
+    "title": "Resource Owner Password Credentials",
+    "bi_score": 0.591,
+    "ce_score": 3.81
+   },
+   {
+    "bi_rank": 2,
+    "ce_rank": 4,
+    "move": "#2 -> #4",
+    "gold": "",
+    "chunk_id": 107,
+    "section": "4.3",
+    "title": "Resource Owner Password Credentials Grant",
+    "bi_score": 0.57,
+    "ce_score": 3.08
+   },
+   {
+    "bi_rank": 3,
+    "ce_rank": 6,
+    "move": "#3 -> #6",
+    "gold": "",
+    "chunk_id": 20,
+    "section": "1.3.3",
+    "title": "Resource Owner Password Credentials",
+    "bi_score": 0.556,
+    "ce_score": 2.89
+   },
+   {
+    "bi_rank": 4,
+    "ce_rank": 5,
+    "move": "#4 -> #5",
+    "gold": "",
+    "chunk_id": 112,
+    "section": "4.4",
+    "title": "Client Credentials Grant",
+    "bi_score": 0.552,
+    "ce_score": 3.07
+   },
+   {
+    "bi_rank": 5,
+    "ce_rank": 1,
+    "move": "#5 -> #1",
+    "gold": "",
+    "chunk_id": 19,
+    "section": "1.3.3",
+    "title": "Resource Owner Password Credentials",
+    "bi_score": 0.551,
+    "ce_score": 4.53
+   },
+   {
+    "bi_rank": 6,
+    "ce_rank": 8,
+    "move": "#6 -> #8",
+    "gold": "",
+    "chunk_id": 110,
+    "section": "4.3.2",
+    "title": "Access Token Request",
+    "bi_score": 0.546,
+    "ce_score": 2.38
+   },
+   {
+    "bi_rank": 7,
+    "ce_rank": 9,
+    "move": "#7 -> #9",
+    "gold": "",
+    "chunk_id": 66,
+    "section": "3.2.1",
+    "title": "Client Authentication",
+    "bi_score": 0.542,
+    "ce_score": 0.95
+   },
+   {
+    "bi_rank": 8,
+    "ce_rank": 7,
+    "move": "#8 -> #7",
+    "gold": "",
+    "chunk_id": 113,
+    "section": "4.4",
+    "title": "Client Credentials Grant",
+    "bi_score": 0.539,
+    "ce_score": 2.66
+   },
+   {
+    "bi_rank": 9,
+    "ce_rank": 10,
+    "move": "#9 -> #10",
+    "gold": "",
+    "chunk_id": 21,
+    "section": "1.3.4",
+    "title": "Client Credentials",
+    "bi_score": 0.537,
+    "ce_score": -1.1
+   },
+   {
+    "bi_rank": 10,
+    "ce_rank": 3,
+    "move": "#10 -> #3",
+    "gold": "",
+    "chunk_id": 151,
+    "section": "9",
+    "title": "Native Applications",
+    "bi_score": 0.536,
+    "ce_score": 3.74
+   }
+  ]
+ },
+ "B9": {
+  "question": "Can the authorization server issue a refresh token in the authorization code flow?",
+  "answer1": "The provided context does not answer this question.",
+  "answer2": "The provided context does not answer this question.",
+  "sections1": [
+   "6",
+   "1.5",
+   "1.5"
+  ],
+  "sections2": [
+   "6",
+   "10.4",
+   "1.5"
+  ],
+  "llm_latency_1": 0.3478083299996797,
+  "llm_latency_2": 0.2888425029996142,
+  "category": "buried",
+  "shift": "#17 in full corpus (not in top 10)",
+  "outcome": "recall miss (gold not in top 10)",
+  "top10": [
+   {
+    "bi_rank": 1,
+    "ce_rank": 1,
+    "move": "#1 -> #1",
+    "gold": "",
+    "chunk_id": 131,
+    "section": "6",
+    "title": "Refreshing an Access Token",
+    "bi_score": 0.78,
+    "ce_score": 8.04
+   },
+   {
+    "bi_rank": 2,
+    "ce_rank": 5,
+    "move": "#2 -> #5",
+    "gold": "",
+    "chunk_id": 28,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.771,
+    "ce_score": 6.81
+   },
+   {
+    "bi_rank": 3,
+    "ce_rank": 3,
+    "move": "#3 -> #3",
+    "gold": "",
+    "chunk_id": 26,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.762,
+    "ce_score": 7.74
+   },
+   {
+    "bi_rank": 4,
+    "ce_rank": 6,
+    "move": "#4 -> #6",
+    "gold": "",
+    "chunk_id": 161,
+    "section": "10.4",
+    "title": "Refresh Tokens",
+    "bi_score": 0.758,
+    "ce_score": 6.39
+   },
+   {
+    "bi_rank": 5,
+    "ce_rank": 7,
+    "move": "#5 -> #7",
+    "gold": "",
+    "chunk_id": 25,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.748,
+    "ce_score": 6.02
+   },
+   {
+    "bi_rank": 6,
+    "ce_rank": 10,
+    "move": "#6 -> #10",
+    "gold": "",
+    "chunk_id": 129,
+    "section": "6",
+    "title": "Refreshing an Access Token",
+    "bi_score": 0.745,
+    "ce_score": 4.33
+   },
+   {
+    "bi_rank": 7,
+    "ce_rank": 2,
+    "move": "#7 -> #2",
+    "gold": "",
+    "chunk_id": 159,
+    "section": "10.4",
+    "title": "Refresh Tokens",
+    "bi_score": 0.742,
+    "ce_score": 7.85
+   },
+   {
+    "bi_rank": 8,
+    "ce_rank": 4,
+    "move": "#8 -> #4",
+    "gold": "",
+    "chunk_id": 160,
+    "section": "10.4",
+    "title": "Refresh Tokens",
+    "bi_score": 0.741,
+    "ce_score": 7.39
+   },
+   {
+    "bi_rank": 9,
+    "ce_rank": 9,
+    "move": "#9 -> #9",
+    "gold": "",
+    "chunk_id": 27,
+    "section": "1.5",
+    "title": "Refresh Token",
+    "bi_score": 0.738,
+    "ce_score": 4.74
+   },
+   {
+    "bi_rank": 10,
+    "ce_rank": 8,
+    "move": "#10 -> #8",
+    "gold": "",
+    "chunk_id": 130,
+    "section": "6",
+    "title": "Refreshing an Access Token",
+    "bi_score": 0.731,
+    "ce_score": 5.7
+   }
+  ]
+ }
+}

@@ -1,0 +1,11 @@
+device,stage,median_ms,p95_ms,mean_ms
+cuda,query embedding (bi-encoder),2.842,4.043,2.981
+cuda,FAISS top-10 search,0.034,0.053,0.037
+cuda,cross-encoder re-rank (10 pairs),14.062,17.392,13.93
+cuda,Pipeline 1 retrieval total,2.875,4.093,3.019
+cuda,Pipeline 2 retrieval total,17.063,20.444,16.949
+cpu,query embedding (bi-encoder),7.873,8.357,7.39
+cpu,FAISS top-10 search,0.138,0.148,0.119
+cpu,cross-encoder re-rank (10 pairs),131.872,170.052,132.501
+cpu,Pipeline 1 retrieval total,8.012,8.499,7.509
+cpu,Pipeline 2 retrieval total,139.916,177.63,140.01

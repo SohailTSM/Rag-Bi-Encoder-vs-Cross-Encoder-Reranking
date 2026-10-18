@@ -1,0 +1,5 @@
+,Pipeline 1 (bi-encoder),Pipeline 2 (+ cross-encoder)
+Hit@1,0.412,0.647
+Hit@3 (gold reaches the LLM),0.735,0.824
+Recall@10,0.882,0.882
+MRR@10,0.576,0.732

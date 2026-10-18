@@ -1,0 +1,13 @@
+# Never commit secrets (keys, .env files)
+secrets/
+.env
+*api_key*
+
+# Python / Jupyter
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Regenerable artifacts
+cache/
